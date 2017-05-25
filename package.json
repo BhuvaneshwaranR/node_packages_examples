@@ -1,0 +1,29 @@
+{
+  "name": "nodebestpackages",
+  "version": "0.0.1",
+  "description": "This is about examples of best packages avaiable in node.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhuvaneshwaranR/node_packages_examples.git"
+  },
+  "keywords": [
+    "node",
+    "example",
+    "examples"
+  ],
+  "author": "bhuvan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BhuvaneshwaranR/node_packages_examples/issues"
+  },
+  "homepage": "https://github.com/BhuvaneshwaranR/node_packages_examples#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2"
+  }
+}
