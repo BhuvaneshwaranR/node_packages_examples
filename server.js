@@ -14,5 +14,6 @@ app.listen(port,function()
 })
 
 var tesseractAPI=require('./apis/tesseract/tesseract_example').ImageToText(app, router);
+var jimpAPI=require('./apis/jimp/jimp_example').ImageManipulation(app, router);
 
 module.exports=router;

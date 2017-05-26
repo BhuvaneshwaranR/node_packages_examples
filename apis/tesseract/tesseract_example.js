@@ -1,17 +1,17 @@
-var Tesseract = require('tesseract.js');
+var Tesseract = require('tesseract.js'); //used to convert img to text
 var multiparty = require('multiparty');
 exports.ImageToText = TesseractRoute;
 
 function TesseractRoute(app, router) {
 
     router.post('/uploadImage', function(req, res) {
-
+         console.log("req",req.ip);
         var form = new multiparty.Form();
         form.parse(req, function(err, fields, files) {
             var image = files.image[0];
             
             Tesseract.recognize(image.path)
-                .progress(function(p) { console.log('progress', p) })
+                .progress(function(p) { /*console.log('progress', p)*/ })
                 .then(function(result) {                    
                     res.json({ "result": result.text });
                 });
